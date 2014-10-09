@@ -47,6 +47,8 @@ module Discourse
     config.autoload_paths += Dir["#{config.root}/lib/validators/"]
     config.autoload_paths += Dir["#{config.root}/app"]
 
+    config.assets.initialize_on_precompile = false
+    
     # Only load the plugins named here, in the order given (default is alphabetical).
     # :all can be used as a placeholder for all plugins not explicitly named.
     # config.plugins = [ :exception_notification, :ssl_requirement, :all ]
