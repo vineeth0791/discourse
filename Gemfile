@@ -84,8 +84,8 @@ gem 'rails-observers'
 # would continue to work with Rails 4.1.6+ when it is released.
 gem 'mail', '~> 2.5.4'
 
-#gem 'redis-rails'
-gem 'hiredis'
+gem 'redis-rails'
+ gem 'hiredis'
 gem 'redis', require:  ["redis", "redis/connection/hiredis"]
 
 # We use some ams 0.8.0 features, need to amend code
@@ -141,7 +141,7 @@ gem 'omniauth-google-oauth2'
 gem 'oj'
 # while resolving https://groups.google.com/forum/#!topic/ruby-pg/5_ylGmog1S4
 gem 'pg', '0.15.1'
-gem 'pry-rails', require: false
+ gem 'pry-rails', require: false
 gem 'rake'
 
 
@@ -154,7 +154,7 @@ gem 'sidekiq'
 # for sidekiq web
 gem 'sinatra', require: nil
 
-gem 'therubyracer'
+ gem 'therubyracer'
 gem 'thin', require: false
 gem 'highline', require: false
 gem 'rack-protection' # security
@@ -212,7 +212,7 @@ end
 # this is an optional gem, it provides a high performance replacement
 # to String#blank? a method that is called quite frequently in current
 # ActiveRecord, this may change in the future
-gem 'fast_blank' #, github: "SamSaffron/fast_blank"
+# gem 'fast_blank' #, github: "SamSaffron/fast_blank"
 
 # this provides a very efficient lru cache
 gem 'lru_redux'
@@ -226,7 +226,7 @@ gem 'htmlentities', require: false
 gem 'flamegraph', require: false
 gem 'rack-mini-profiler', require: false
 
-gem 'unicorn', require: false
+gem 'unicorn', require: false 
 gem 'puma', require: false
 gem 'rbtrace', require: false, platform: :mri
 
