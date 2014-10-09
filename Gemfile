@@ -145,8 +145,6 @@ gem 'pg', '0.15.1'
 gem 'rake'
 
 
-
-
 gem 'rest-client'
 gem 'rinku'
 gem 'sanitize'
