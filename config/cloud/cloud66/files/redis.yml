@@ -1,5 +1,5 @@
 defaults: &defaults
-  uri: <%= uri = URI.parse( ENV['REDIS_ADDRESS'].nil? ? ENV['REDIS_PROVIDER_URL'] || "redis://localhost:6379" : "redis://#{ENV['REDIS_ADDRESS']}:6379") %>
+  uri: <%= uri = URI.parse( ENV['REDIS_ADDRESS'].nil? ? ENV['REDIS_PROVIDER_URL'] || "redis://rediscloud:gC2PRxUbp95lQB85@pub-redis-17670.us-east-1-2.2.ec2.garantiadata.com:17670" : "redis://#{ENV['REDIS_ADDRESS']}:17670") %>
   host: <%= uri.host %>
   port: <%= uri.port %>
   password: <%= uri.password %>
