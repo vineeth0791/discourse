@@ -127,7 +127,7 @@ module Discourse
     # route all exceptions via our router
     config.exceptions_app = self.routes
 
-    config.assets.initialize_on_precompile = false
+  
 
     # Our templates shouldn't start with 'discourse/templates'
     config.handlebars.templates_root = 'discourse/templates'
