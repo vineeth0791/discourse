@@ -376,7 +376,7 @@ class UsersController < ApplicationController
   end
 
   def send_activation_email
-<<<<<<< .merge_file_a05504
+
 
     RateLimiter.new(nil, "activate-hr-#{request.remote_ip}", 30, 1.hour).performed!
     RateLimiter.new(nil, "activate-min-#{request.remote_ip}", 6, 1.minute).performed!
@@ -385,9 +385,9 @@ class UsersController < ApplicationController
 
     raise Discourse::NotFound unless @user
 
-=======
+
     @user = fetch_user_from_params(include_inactive: true)
->>>>>>> .merge_file_a05760
+
     @email_token = @user.email_tokens.unconfirmed.active.first
     enqueue_activation_email if @user
     render nothing: true
