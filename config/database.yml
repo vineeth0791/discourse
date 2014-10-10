@@ -1,7 +1,7 @@
 production:
   adapter: postgresql
-  database: discourse
-  password: discourse
+  database: discourse_development
+  # password: discourse
   min_messages: warning
   pool: 5
   timeout: 5000
@@ -10,7 +10,7 @@ production:
     ### If you change this setting you will need to
     ###   - restart sidekiq if you change this setting
     ###   - rebake all to posts using: `RAILS_ENV=production bundle exec rake posts:rebake`
-    - "www.napda.org"
+    - "www.fillgapp.com"
 
 development:
   adapter: postgresql
