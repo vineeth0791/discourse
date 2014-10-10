@@ -1,3 +1,17 @@
+production:
+  adapter: postgresql
+  database: discourse
+  password: discourse
+  min_messages: warning
+  pool: 5
+  timeout: 5000
+  host_names:
+    ### Don't include the port number here. Change the "port" site setting instead, at /admin/site_settings.
+    ### If you change this setting you will need to
+    ###   - restart sidekiq if you change this setting
+    ###   - rebake all to posts using: `RAILS_ENV=production bundle exec rake posts:rebake`
+    - "www.napda.org"
+
 development:
   adapter: postgresql
   database: discourse_development
